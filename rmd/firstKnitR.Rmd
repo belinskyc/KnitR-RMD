@@ -6,7 +6,7 @@ output:
   pdf_document: default
   html_document: default
   word_document: default
-urlcolor: blue
+urlcolor: blue 
 ---
 <!-- This is a comment in HTML/RMarkdown -->
 <!-- You need to install MikTex on a PC or MacTex on a Mac to create PDF files.
