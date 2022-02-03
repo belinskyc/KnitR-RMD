@@ -3,35 +3,39 @@ title: "FirstKnitR"
 author: "Charlie"
 date: "2/1/2022"
 output:
-  pdf_document: default
   html_document: default
   word_document: default
-urlcolor: blue 
+  pdf_document: default
+urlcolor: blue  
 ---
 <!-- This is a comment in HTML/RMarkdown -->
+
 <!-- You need to install MikTex on a PC or MacTex on a Mac to create PDF files.
-     - MikTex installation: 
-       set paper to Letter (not A4)
-       set Install Missing PAckages on the Fly to Yes (not Ask Me First)
-       keep automatical updates checkbox checked
+     - In the MikTex installation: 
+       - set paper to "Letter" (not A4)
+       - set Install Missing Packages on the Fly to "Yes" (not Ask Me First)
+       - keep automatic updates checkbox checked
      
-     The first time you create a PDF file using KnitR will be very slow
-       because MikTex is updating -- it will be much faster after that
-       
+     The first time you create a PDF file using KnitR will be VERY slow
+       because MikTex is updating -- it will be much faster the second time
 --> 
+
+
+<!-- Sets the Working directory to be RStudio Project folder 
+     (this is not the default in KnitR) -->
 ```{r setup, include=FALSE, cache = FALSE}
 require("knitr") 
 ## setting working directory
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 ```
 
-<!-- Runs the code but does not output to the document -->
+<!-- Runs the code but does not output to the document (include=FALSE) -->
 ```{r include=FALSE}
 source(file="scripts/lesson05-ModifyMappedElements-new.R");
 ```
 
-
-Newlines in RStudio are done by adding two spaces to the end of a line.  
+Formatting in RMarkdown is awkward!!  
+Newlines in RMarkdown are done by adding two spaces to the end of a line.  
   
 Things you can do in RMD:  
 **Bold**  
